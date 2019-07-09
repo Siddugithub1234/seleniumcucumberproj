@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="199787" started-at="2019-07-05T08:57:28Z" finished-at="2019-07-05T09:00:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="199787" started-at="2019-07-05T08:57:28Z" finished-at="2019-07-05T09:00:47Z">
+      <class name="testmeapp.testapp">
+        <test-method status="PASS" signature="startReportBeforeTest()[pri:0, instance:testmeapp.testapp@7dc36524]" name="startReportBeforeTest" is-config="true" duration-ms="19060" started-at="2019-07-05T14:27:28Z" finished-at="2019-07-05T14:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReportBeforeTest -->
+        <test-method status="PASS" signature="testCart()[pri:0, instance:testmeapp.testapp@7dc36524]" name="testCart" duration-ms="21255" started-at="2019-07-05T14:27:47Z" finished-at="2019-07-05T14:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCart -->
+        <test-method status="PASS" signature="startReportBeforeTest()[pri:0, instance:testmeapp.testapp@7dc36524]" name="startReportBeforeTest" is-config="true" duration-ms="16856" started-at="2019-07-05T14:28:08Z" finished-at="2019-07-05T14:28:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReportBeforeTest -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:testmeapp.testapp@7dc36524]" name="testLogin" duration-ms="61519" started-at="2019-07-05T14:28:25Z" finished-at="2019-07-05T14:29:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="startReportBeforeTest()[pri:0, instance:testmeapp.testapp@7dc36524]" name="startReportBeforeTest" is-config="true" duration-ms="48174" started-at="2019-07-05T14:29:26Z" finished-at="2019-07-05T14:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReportBeforeTest -->
+        <test-method status="PASS" signature="testPayment()[pri:0, instance:testmeapp.testapp@7dc36524]" name="testPayment" duration-ms="2" started-at="2019-07-05T14:30:15Z" finished-at="2019-07-05T14:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPayment -->
+        <test-method status="PASS" signature="startReportBeforeTest()[pri:0, instance:testmeapp.testapp@7dc36524]" name="startReportBeforeTest" is-config="true" duration-ms="21238" started-at="2019-07-05T14:30:15Z" finished-at="2019-07-05T14:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReportBeforeTest -->
+        <test-method status="PASS" signature="testRegistration()[pri:0, instance:testmeapp.testapp@7dc36524]" name="testRegistration" duration-ms="1" started-at="2019-07-05T14:30:36Z" finished-at="2019-07-05T14:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="startReportBeforeTest()[pri:0, instance:testmeapp.testapp@7dc36524]" name="startReportBeforeTest" is-config="true" duration-ms="11656" started-at="2019-07-05T14:30:36Z" finished-at="2019-07-05T14:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReportBeforeTest -->
+        <test-method status="PASS" signature="endReportAfterTest()[pri:0, instance:testmeapp.testapp@7dc36524]" name="endReportAfterTest" is-config="true" duration-ms="1" started-at="2019-07-05T14:30:47Z" finished-at="2019-07-05T14:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReportAfterTest -->
+      </class> <!-- testmeapp.testapp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

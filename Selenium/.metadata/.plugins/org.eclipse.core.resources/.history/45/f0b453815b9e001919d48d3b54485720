@@ -1,0 +1,58 @@
+package testmeapp;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import testmeapp.utility.Drivers;
+
+public class testapp {
+ 
+	  WebDriver driver;
+	   ExtentHtmlReporter htmlreporter;
+	   ExtentReports extent;
+	   ExtentTest logger;
+	   @AfterTest
+	   public void endReportAfterTest() {
+		   
+	   }
+	   @AfterMethod
+	   public void getResultAfterMethod(ITestResult result){
+		   if(result.getStatus()==ITestResult.SUCCESS) {
+			   logger.log(Status.PASS, "The test has passed");
+		   }
+		  // else if(result.getStatus()==ITestResult.FAILURE) {
+		//	logger.log(Status.PASS, "The test has failed");   
+		  // }
+	   }
+	   @BeforeTest
+	   public void startReportBeforeTest() {
+		   String url="http://10.232.237.143:443/TestMeApp/";
+		   driver = new Drivers().getDriver("chrome");
+		   driver.get(url);
+		 }
+	   @Test
+	   public void testCart() {
+		   
+	   }
+	   @Test
+	   public void testLogin() {
+		   
+	   }
+	   @Test
+	   public void testPayment() {
+		   
+	   }
+	   @Test
+	   public void testRegistration() {
+		   
+	   }
+}

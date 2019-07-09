@@ -1,0 +1,7 @@
+package testng;
+
+import org.testng.annotations.BeforeClass;
+
+public class demo {
+public int count=0;
+}

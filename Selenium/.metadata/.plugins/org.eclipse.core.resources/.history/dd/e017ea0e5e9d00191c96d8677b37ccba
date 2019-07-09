@@ -1,0 +1,27 @@
+package Locator;
+
+import java.util.concurrent.TimeUnit;
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Lists {
+  @Test
+  public void f() {
+	  String baseURL="https://google.co.in";
+	  String chrome = "C:\\Users\\a07208trng_b4a.04.26\\Desktop\\Selenium\\jar\\chromedriver_win32\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", chrome);
+		WebDriver drive=new ChromeDriver();
+		drive.get(baseURL);
+		drive.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		List<WebElement> link=drive.findElements(By.tagName("a"));
+		System.out.println("No of links:- "+link.size());
+		for(WebElement link1:link) {
+			System.out.println(link1.getText() + " :-  " +link1.getAttribute("href"));
+		}
+  }
+}

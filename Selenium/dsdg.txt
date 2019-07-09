@@ -1,0 +1,45 @@
+WebDriver driver;
+	@Given("url of testmeapp {string}")
+	public void url_of_testmeapp(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		String chpath="C:\\Users\\a07208trng_b4a.04.26\\Desktop\\Selenium\\jar\\chromedriver_win32\\chromedriver.exe";
+	    System.setProperty("webdriver.chrome.driver", chpath);
+	     driver = new ChromeDriver();
+	    driver.get(string);
+	}
+
+	@When("user enters {string} as username")
+	public void user_enters_as_username(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.id("userName")).sendKeys(string);
+	}
+
+	@When("user enters {string} as firstname")
+	public void user_enters_as_firstname(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.id("firstName")).sendKeys(string);
+	}
+
+	@When("user enters {string} as lastname")
+	public void user_enters_as_lastname(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.id("lastName")).sendKeys(string);
+	}
+
+	@When("user enters {string} as password")
+	public void user_enters_as_password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.id("password")).sendKeys(string);
+	}
+
+	@When("user enters {string} as confirmpassword")
+	public void user_enters_as_confirmpassword(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.id("pass_confirmation")).sendKeys(string);
+	}
+
+	@Then("Quit Browser")
+	public void quit_Browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}

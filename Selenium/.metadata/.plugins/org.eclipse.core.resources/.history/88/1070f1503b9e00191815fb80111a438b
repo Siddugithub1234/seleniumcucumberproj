@@ -1,0 +1,9 @@
+package DAS;
+
+import org.testng.annotations.Test;
+
+public class SS {
+  @Test
+  public void f() {
+  }
+}

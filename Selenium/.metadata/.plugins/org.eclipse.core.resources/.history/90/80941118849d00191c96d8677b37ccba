@@ -1,0 +1,24 @@
+package Locator;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Alertpop {
+  @Test
+  public void f() throws InterruptedException {
+		  String chrome = "C:\\Users\\a07208trng_b4a.04.26\\Desktop\\Selenium\\jar\\chromedriver_win32\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", chrome);
+		WebDriver drive=new ChromeDriver();
+		drive.get("http://10.232.237.143:443/TestMeApp/");
+		String finddetail="/html/body/div[1]/form/input";
+		Thread.sleep(3000);
+	drive.findElement(By.xpath(finddetail)).click();
+		Alert demo=drive.switchTo().alert();
+		String mes=demo.getText();
+		System.out.println(mes);
+		demo.accept();
+  }
+}

@@ -1,0 +1,14 @@
+package testng1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.DataProvider;
+public class hello {
+  @Test(dataProvider="getData", dataProviderClass=DataProvider.class)
+  public void clienttest(Integer p,String p1) {
+	  System.out.println("Client testing: Data(" +p + ","+"String is"+" - "+p1+")");
+  }
+  @Test(dataProvider="getData1", dataProviderClass=DataProvider.class)
+  public void clientest(Integer x,String y) {
+	  System.out.println("Client testing: Data(" +x + ","+"String is"+" - "+y+")");
+  }
+}

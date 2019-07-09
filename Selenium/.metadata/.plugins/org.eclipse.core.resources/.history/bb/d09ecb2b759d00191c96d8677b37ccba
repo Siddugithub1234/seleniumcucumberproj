@@ -1,0 +1,9 @@
+package Locator;
+
+import org.testng.annotations.Test;
+
+public class hello1 {
+  @Test
+  public void f() {
+  }
+}

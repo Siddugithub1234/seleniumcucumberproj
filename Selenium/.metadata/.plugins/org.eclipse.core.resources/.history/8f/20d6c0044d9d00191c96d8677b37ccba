@@ -1,0 +1,9 @@
+package Locator;
+
+import org.testng.annotations.Test;
+
+public class CSSLOC {
+  @Test
+  public void f() {
+  }
+}

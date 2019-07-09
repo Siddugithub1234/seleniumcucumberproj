@@ -1,0 +1,25 @@
+package Locator;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class hello1 {
+  @Test
+  public void f() {
+	  String chrome = "C:\\Users\\a07208trng_b4a.04.26\\Desktop\\Selenium\\jar\\chromedriver_win32\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", chrome);
+		WebDriver drive=new ChromeDriver();
+		drive.manage().window().maximize();
+		drive.get("http://demowebshop.tricentis.com/");
+		drive.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Actions actions=new Actions(drive);
+		actions.moveToElement(drive.findElement(By.xpath("a[@href='/electronics']"))).perform();
+		actions.moveToElement(drive.findElement(By.xpath("//a[@href='/camera-photo']"))).click().build().perform();
+		
+  }
+}

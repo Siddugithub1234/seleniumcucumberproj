@@ -1,0 +1,33 @@
+package DAS;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+public class Filesrc {
+  @Test
+  public void f() throws IOException {
+	  File src=new File("C:\\Users\\a07208trng_b4a.04.26\\Desktop\\basics.xlsx");
+	  
+	  FileInputStream fis = new FileInputStream(src);
+	  XSSFWorkbook work = new XSSFWorkbook(fis);
+	  XSSFSheet sheet = work.getSheetAt(0);
+	  int row = sheet.getLastRowNum();
+	  System.out.println(row);
+	  for(int i=1;i<=row;i++) {
+		  String  fname = sheet.getRow(i).getCell(0).getStringCellValue();
+		  System.out.println("First name is: "+fname);
+		  String  user = sheet.getRow(i).getCell(1).getStringCellValue();
+		  System.out.println("First name is: "+user);
+		  String  pwd = sheet.getRow(i).getCell(2).getStringCellValue();
+		  System.out.println("First name is: "+pwd);
+		  String  conpwd = sheet.getRow(i).getCell(3).getStringCellValue();
+		  System.out.println("First name is: "+conpwd);
+		  
+	  }
+  }
+}

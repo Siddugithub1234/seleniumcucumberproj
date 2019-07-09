@@ -1,0 +1,17 @@
+package Selenium;
+
+import org.openqa.selenium.WebDriver;
+
+public class mainmethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new drivers().getDriver("chrome");
+		driver.get("http://www.google.com");
+		WebDriver driver2=new drivers().getDriver("IE");
+		driver2.get("http://www.tancetexam.com");
+		WebDriver driver3=new drivers().getDriver("firefox");
+		driver3.get("http://www.yahoo.com");
+	}
+
+}
